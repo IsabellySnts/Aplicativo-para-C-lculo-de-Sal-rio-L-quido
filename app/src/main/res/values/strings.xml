@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Calcule seu Salário Líquido</string>
+    <string name="salarioB">Informe o salário bruto</string>
+    <string name="dependentes">Número de dependentes</string>
+    <string name="planoSaude">Tem plano de saúde</string>
+    <string name="vt">Tem vale transporte</string>
+    <string name="va">Tem vale alimentação?</string>
+    <string name="vr">Tem vale refeição</string>-
+    <string name="btSim">Sim</string>
+    <string name="btNao">Não</string>
+    <string-array name="tipoPlanos">
+        <item>standard</item>
+        <item>basico</item>
+        <item>super</item>
+        <item>master</item>
+    </string-array>
+    <string name="calcular">Calcular</string>
+    <string name="limpar">Limpar</string>
+
+    <string name="salariobruto">Salário Bruto</string>
+    <string name="valorBruto">Salário Bruto = %1$5.2f</string>
+
+    <string name="tvplanosaude">Plano de Saúde </string>
+    <string name="valorplano">Plano de Saúde = %1$5.2f</string>
+
+    <string name="tvvt">Vale Transporte </string>
+    <string name="valorvt">Vale Transporte = %1$5.2f</string>
+
+    <string name="tvva">Vale Alimentação </string>
+    <string name="valorva">Vale Alimentação = %1$5.2f</string>
+
+    <string name="tvvr">Vale Refeição </string>
+    <string name="valorvr">Vale Refeição = %1$5.2f</string>
+
+    <string name="inss">INSS</string>
+    <string name="valorinss">Valor do INSS = %1$5.2f</string>
+
+    <string name="irrf">IRRF</string>
+    <string name="valorirrf">Valor do IRRF = %1$5.2f</string>
+
+    <string name="salarioLiquido">Salário Líquido </string>
+    <string name="valorLiquido">Salário Líquido = %1$5.2f</string>
+
+
+</resources>

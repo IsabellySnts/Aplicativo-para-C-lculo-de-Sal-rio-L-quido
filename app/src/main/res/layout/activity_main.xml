@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/btn_calc"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        style="@style/estilo_base"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/text_view"
+            android:text="@string/salarioB" />
+
+        <EditText
+            android:id="@+id/salarioBruto"
+            style="@style/edit_text" />
+
+        <TextView
+            style="@style/text_view"
+            android:text="@string/dependentes" />
+
+        <EditText
+            style="@style/edit_text"
+            android:id="@+id/nDependentes"
+            android:inputType="number" />
+
+
+        <TextView
+            style="@style/style_bt"
+            android:text="@string/planoSaude" />
+
+        <Spinner
+            android:id="@+id/spinner_planos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            style="@style/style_bt"
+            android:text="@string/vt" />
+
+        <RadioGroup
+            style="@style/style_bt"
+            android:orientation="horizontal"
+            android:id="@+id/radio_vt">>
+
+            <RadioButton
+                android:id="@+id/btvt_sim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btSim"
+                />
+
+            <RadioButton
+                android:id="@+id/btvt_nao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btNao" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/style_bt"
+            android:text="@string/va" />
+
+        <RadioGroup
+            style="@style/style_bt"
+            android:orientation="horizontal"
+            android:id="@+id/radio_va">
+
+            <RadioButton
+                android:id="@+id/btva_sim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btSim" />
+
+            <RadioButton
+                android:id="@+id/btva_nao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btNao" />
+        </RadioGroup>
+
+        <TextView
+            style="@style/style_bt"
+            android:text="@string/vr" />
+
+        <RadioGroup
+            style="@style/style_bt"
+            android:orientation="horizontal"
+            android:id="@+id/radio_vr">>
+
+            <RadioButton
+                android:id="@+id/btvr_sim"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btSim" />
+
+            <RadioButton
+                android:id="@+id/btvr_nao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btNao" />
+        </RadioGroup>
+
+        <LinearLayout style="@style/estilo_base">
+
+            <Button
+                android:id="@+id/bt_calcular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/calcular" />
+
+            <Button
+                android:id="@+id/bt_limpar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:text="@string/limpar" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_salariobruto"
+            style="@style/text_view"
+            android:text="@string/salariobruto" />
+
+        <TextView
+            android:id="@+id/tv_plano"
+            style="@style/text_view"
+            android:text="@string/tvplanosaude" />
+
+        <TextView
+            android:id="@+id/tv_vt"
+            style="@style/text_view"
+            android:text="@string/tvvt" />
+
+        <TextView
+            android:id="@+id/tv_vr"
+            style="@style/text_view"
+            android:text="@string/tvvr" />
+
+        <TextView
+            android:id="@+id/tv_va"
+            style="@style/text_view"
+            android:text="@string/tvva" />
+
+        <TextView
+            android:id="@+id/INSS"
+            style="@style/text_view"
+            android:text="@string/inss" />
+
+        <TextView
+            android:id="@+id/IRRF"
+            style="@style/text_view"
+            android:text="@string/irrf" />
+
+        <TextView
+            android:id="@+id/salario_liquido"
+            style="@style/text_view"
+            android:text="@string/salarioLiquido" />
+
+
+
+
+    </LinearLayout>
+</ScrollView>
