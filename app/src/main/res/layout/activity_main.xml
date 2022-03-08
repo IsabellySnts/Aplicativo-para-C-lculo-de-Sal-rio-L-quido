@@ -12,6 +12,7 @@
 
         <TextView
             style="@style/text_view"
+            android:drawableLeft="@drawable/dolar"
             android:text="@string/salarioB" />
 
         <EditText
@@ -20,6 +21,8 @@
 
         <TextView
             style="@style/text_view"
+            android:layout_marginLeft="0dp"
+            android:drawableLeft="@drawable/pessoas"
             android:text="@string/dependentes" />
 
         <EditText
@@ -29,6 +32,7 @@
 
 
         <TextView
+            android:drawableLeft="@drawable/saude"
             style="@style/style_bt"
             android:text="@string/planoSaude" />
 
@@ -39,13 +43,14 @@
 
 
         <TextView
+            android:drawableLeft="@drawable/trem"
             style="@style/style_bt"
             android:text="@string/vt" />
 
         <RadioGroup
             style="@style/style_bt"
             android:orientation="horizontal"
-            android:id="@+id/radio_vt">>
+            android:id="@+id/radio_vt">
 
             <RadioButton
                 android:id="@+id/btvt_sim"
@@ -62,6 +67,7 @@
         </RadioGroup>
 
         <TextView
+            android:drawableLeft="@drawable/cesta"
             style="@style/style_bt"
             android:text="@string/va" />
 
@@ -84,6 +90,7 @@
         </RadioGroup>
 
         <TextView
+            android:drawableLeft="@drawable/prato"
             style="@style/style_bt"
             android:text="@string/vr" />
 
@@ -105,6 +112,8 @@
                 android:text="@string/btNao" />
         </RadioGroup>
 
+
+
         <LinearLayout style="@style/estilo_base">
 
             <Button
@@ -113,6 +122,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
+                android:backgroundTint="@color/verde_agua"
+                android:textColor="@color/white"
                 android:text="@string/calcular" />
 
             <Button
@@ -121,48 +132,44 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
                 android:layout_weight="1"
+                android:backgroundTint="@color/verde_agua"
+                android:textColor="@color/white"
                 android:text="@string/limpar" />
         </LinearLayout>
 
+
         <TextView
             android:id="@+id/tv_salariobruto"
-            style="@style/text_view"
-            android:text="@string/salariobruto" />
-
+            style="@style/text_view" />
         <TextView
             android:id="@+id/tv_plano"
-            style="@style/text_view"
-            android:text="@string/tvplanosaude" />
-
+            style="@style/text_view" />
         <TextView
-            android:id="@+id/tv_vt"
-            style="@style/text_view"
-            android:text="@string/tvvt" />
+           android:id="@+id/tv_vt"
+            style="@style/text_view"/>
 
         <TextView
             android:id="@+id/tv_vr"
-            style="@style/text_view"
-            android:text="@string/tvvr" />
+            style="@style/text_view" />
 
         <TextView
             android:id="@+id/tv_va"
-            style="@style/text_view"
-            android:text="@string/tvva" />
+            style="@style/text_view" />
 
         <TextView
             android:id="@+id/INSS"
-            style="@style/text_view"
-            android:text="@string/inss" />
+            style="@style/text_view" />
 
         <TextView
             android:id="@+id/IRRF"
-            style="@style/text_view"
-            android:text="@string/irrf" />
+            style="@style/text_view" />
 
         <TextView
             android:id="@+id/salario_liquido"
-            style="@style/text_view"
-            android:text="@string/salarioLiquido" />
+            style="@style/text_view" />
+
+
+
 
 
 

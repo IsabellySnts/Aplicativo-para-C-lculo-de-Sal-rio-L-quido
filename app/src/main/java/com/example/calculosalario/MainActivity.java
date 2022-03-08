@@ -2,7 +2,9 @@ package com.example.calculosalario;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
@@ -64,6 +66,12 @@ public class MainActivity extends AppCompatActivity {
                 salarioBruto.setError("Informe o Salário Líquido");
             } else if (dependentes.getText().toString().isEmpty()) {
                 dependentes.setError("Informe o numero de dependentes");
+            }else if(groupVT.getCheckedRadioButtonId() == -1) {
+                Toast.makeText(this, "Não Selecionou VA", Toast.LENGTH_SHORT).show();
+            }else if(groupVR.getCheckedRadioButtonId() == -1) {
+                Toast.makeText(this, "Não Selecionou VR", Toast.LENGTH_SHORT).show();
+            }else if(groupVA.getCheckedRadioButtonId() == -1) {
+                Toast.makeText(this, "Não Selecionou VT", Toast.LENGTH_SHORT).show();
             } else {
                 double sb, ps=0, vt=0, va=0, vr=0, inss, irrf, sl=0;
                 sb = Double.parseDouble(salarioBruto.getText().toString());
@@ -201,8 +209,28 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
             }
 
+
+
+        });
+
+        btlimpar.setOnClickListener(v ->{
+            salarioBruto.setText(null);
+            dependentes.setText(null);
+            groupVT.clearCheck();
+            groupVR.clearCheck();
+            groupVA.clearCheck();
+            planos.setSelection(0);
+            valorSB.setText(null);
+            valorVT.setText(null);
+            valorVr.setText(null);
+            valorVA.setText(null);
+            valorIrrf.setText(null);
+            valorInss.setText(null);
+            valorPS.setText(null);
+            salarioLiquido.setText(null);
         });
 
 

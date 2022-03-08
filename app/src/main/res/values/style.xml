@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+
     <style name="estilo_base">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -20,6 +22,7 @@
     <style name="style_bt">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
+
     </style>
 
 

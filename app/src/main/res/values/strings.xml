@@ -1,14 +1,15 @@
 <resources>
-    <string name="app_name">Calcule seu Salário Líquido</string>
+    <string name="app_name">Calculo Salário Líquido</string>
     <string name="salarioB">Informe o salário bruto</string>
     <string name="dependentes">Número de dependentes</string>
-    <string name="planoSaude">Tem plano de saúde</string>
-    <string name="vt">Tem vale transporte</string>
-    <string name="va">Tem vale alimentação?</string>
-    <string name="vr">Tem vale refeição</string>-
+    <string name="planoSaude">Plano de saúde</string>
+    <string name="vt">Vale transporte</string>
+    <string name="va">Vale alimentação</string>
+    <string name="vr">Vale refeição</string>-
     <string name="btSim">Sim</string>
     <string name="btNao">Não</string>
     <string-array name="tipoPlanos">
+        <item>Nenhum</item>
         <item>standard</item>
         <item>basico</item>
         <item>super</item>
